@@ -16,6 +16,5 @@ function commits_per_user () {
         stats[${userstats[0]}]=$(( ${stats[${userstats[0]}]} + ${userstats[1]} ))
     done <<< $RESULT
 
-# TODO rendezni a stats tömböt...
-    for K in "${!stats[@]}"; do echo $K --- ${stats[$K]}; done
+    for K in "${!stats[@]}"; do echo -e "${stats[$K]}\t\t$K"; done | sort -rn -k1
 }
