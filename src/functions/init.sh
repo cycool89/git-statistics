@@ -19,4 +19,6 @@ function check_git_repo () {
         echo "Given folder:" $1 "is NOT a GIT repo."
         exit 1
     fi
+
+    REPO_NAME=$(basename `git rev-parse --show-toplevel`)
 }

@@ -9,7 +9,7 @@ source ./functions/commits-per-week.sh
 function __main__ () {
     process_parameters $@
     check_git_repo $FOLDER
-    log "GIT statistics about $FOLDER"
+    log "GIT statistics about $REPO_NAME"
     echo
     commits_per_user
     echo
