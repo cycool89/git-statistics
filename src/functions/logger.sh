@@ -2,12 +2,12 @@
 
 function log_separator () {
     strlen=$1
-    echo -n "--"
+    echo -n "|-"
     for (( i=1; i<=$strlen; i++ ))
     do
         echo -n "-"
     done
-    echo "--"
+    echo "-|"
 }
 
 function log () {
