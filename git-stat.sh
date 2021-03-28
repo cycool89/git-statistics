@@ -1,3 +1,4 @@
+#!/bin/bash
 FOLDER=`pwd`
 
 function process_parameters () {
