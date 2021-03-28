@@ -4,6 +4,7 @@ source ./functions/variables.sh
 source ./functions/init.sh
 source ./functions/logger.sh
 source ./functions/commits-per-user.sh
+source ./functions/commits-per-week.sh
 
 function __main__ () {
     process_parameters $@
@@ -14,6 +15,9 @@ function __main__ () {
     echo
     commits_per_user --no-merges
     echo
+    commits_per_week
+    echo
+    commits_per_week --no-merges
 }
 
 __main__ $@
